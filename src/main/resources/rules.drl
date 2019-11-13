@@ -1,0 +1,10 @@
+// curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'adminUser:cotecdmAdmin2@l9' --data @input.son https://kieserver-immutable-kieserver-cotec-rhfolha-dev.apps.fortaleza.ce.gov.br/services/rest/server/containers/instances/pocKieDrools
+// https://kieserver-immutable-kieserver-cotec-rhfolha-dev.apps.fortaleza.ce.gov.br/services/rest/server/containers/pocKieDrools
+package org.drools.workshop;
+
+rule "My First Drools Rule"
+    when
+        $o: Object()
+    then
+        System.out.println(" >>> [v3] Rule Fired for Object: "+$o.toString());
+end
